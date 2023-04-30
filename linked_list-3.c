@@ -27,10 +27,6 @@ int main(int argc, char **argv)
 		curr = curr->next;
 	}
 
-	for (node *curr = &root; curr != NULL; curr = curr->next)
-	{
-		printf("%d\n", curr->x);
-	}
 
 	free(root.next->next->next);
 	free(root.next);

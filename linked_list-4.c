@@ -19,14 +19,13 @@ int main(void)
 	root.next ->next->next = malloc(sizeof(node));
 	root.next->next->next->x = 45;
 
-	node *curr = &root;
 
-	while (curr != NULL)
+	for (node *curr = &root; curr != NULL; curr = curr->next)
 	{
 		printf("%d\n", curr->x);
-		curr = curr->next;
-
 	}
 
+	free(root.next->next->next);
+	free(root.next);
 	return (0);
 }
