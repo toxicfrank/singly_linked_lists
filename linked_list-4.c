@@ -6,7 +6,10 @@ typedef struct node
 	int x;
 	struct node *next;
 }node;
-
+/**
+ * main - tterating a linked list using for loop
+ * Return: always 0
+ */
 int main(void)
 {
 	node root;
@@ -18,6 +21,7 @@ int main(void)
 	root.next->next->x = 30;
 	root.next ->next->next = malloc(sizeof(node));
 	root.next->next->next->x = 45;
+	root.next->next->next->next = NULL;
 
 
 	for (node *curr = &root; curr != NULL; curr = curr->next)

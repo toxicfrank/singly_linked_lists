@@ -6,6 +6,10 @@ typedef struct node
 	int x;
 	struct node *next;
 }node;
+/**
+ * main - itterating a linked list using while loop
+ * Return: always 0
+ */
 
 int main(int argc, char **argv)
 {

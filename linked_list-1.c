@@ -9,7 +9,7 @@ typedef struct node
 }node;
 
 /**
- * main - return integers
+ * main - introduction to linked list
  * Retrun: always 0
  */
 

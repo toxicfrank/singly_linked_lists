@@ -9,7 +9,7 @@ typedef struct node
 }node;
 
 /**
- * main - return integer
+ * main - storing data in a linked list
  * Return: always 0
  */
 
