@@ -22,6 +22,7 @@ int main(int argc, char **argv)
 	root.next = malloc(sizeof(node));
 	root.next -> x = -2;
 	root.next -> y = -4;
+	root.next -> next = NULL;
 
 	printf("FIrst: %d\n", root.x);
 	printf("Second: %d\n", root.next -> x);
