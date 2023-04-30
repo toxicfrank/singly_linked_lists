@@ -19,13 +19,15 @@ int main(int argc, char **argv)
 	root.x = 15;
 	root.next = malloc(sizeof(node));
 	root.next->x = -2;
-	root.next->y = -4;
-	root.next->next = NULL;
+	root.next ->next = malloc(sizeof(node));
+	root.next->next->x = 22;
+	root.next->next->next = NULL;
 
 	printf("FIrst: %d\n", root.x);
 	printf("Second: %d\n", root.next->x);
-	printf("Third: %d\n", root.next->y);
+	printf("Third: %d\n", root.next->next->x);
 
+	free(root.next->next);
 	free(root.next);
 
 	return (0);
