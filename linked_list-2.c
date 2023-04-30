@@ -5,8 +5,8 @@
 
 typedef struct node
 {
-    int a;
-    struct node *node;
+    int x;
+    struct node *next;
 }node;
 
 /**
